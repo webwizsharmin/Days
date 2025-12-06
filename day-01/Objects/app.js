@@ -73,3 +73,34 @@ let user = {
 };
 
 // Using Objects Built-in Methods
+const keys = Object.keys(user);
+console.log(keys);
+
+const values = Object.values(user);
+console.log(values);
+
+const entries = Object.entries(user);
+console.log(entries);
+
+const obj1 = { a: 1, b: 2 };
+const obj2 = { b: 1, c: 3 };
+const obj3 = { c: 1, d: 2 };
+
+const mergedObject = Object.assign({}, obj1, obj2, obj3);
+
+console.log(mergedObject);
+
+Object.freeze(user);
+Object.seal(user);
+user.name = "Eaty";
+user.class = 10;
+
+const water = {
+  brand: "mum",
+  price: 20,
+};
+
+Object.seal(water);
+water.brand = "Jibon";
+
+// Looping through Object
