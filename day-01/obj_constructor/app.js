@@ -8,3 +8,7 @@ function Book(name, author, pages, isRead) {
     console.log(`${this.name} by ${this.author}, ${this.pages}, ${readStatus}`);
   };
 }
+
+const timeManagement = new Book("Time Management", "Bryan Tracy", 187, true);
+
+timeManagement.info();
