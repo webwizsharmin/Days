@@ -102,5 +102,3 @@ const water = {
 
 Object.seal(water);
 water.brand = "Jibon";
-
-// Looping through Object
