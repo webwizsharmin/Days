@@ -43,3 +43,14 @@ dog.bark = function () {
 
 dog.eat(); // Inherited
 dog.bark(); // Own method
+
+//  Method 2: Using constructor Functions
+function Person(name) {
+  this.name = name;
+}
+Person.prototype.sayHi = function () {
+  console.log(`Hi, I'm ${this.name}`);
+};
+
+const p1 = new Person("Sinha");
+p1.sayHi();
